@@ -1,6 +1,6 @@
 import useTicTacToe from '../../games/tictactoe/useTicTacToe.jsx'
 import Board from '../../games/tictactoe/board/Board.jsx'
-import Score from '../../games/tictactoe/Score/Score.jsx'
+import Score from '../../games/tictactoe/score/Score.jsx'
 import './TicTacToe.css'
 
 export default function TicTacToe() {
