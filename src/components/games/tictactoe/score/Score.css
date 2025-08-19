@@ -1,0 +1,12 @@
+.ttt-score {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  padding: 10px 14px;
+  border-radius: 14px;
+}
+.ttt-score-status {
+  margin-left: auto;
+  font-weight: 700;
+  color: var(--brand-600);
+}

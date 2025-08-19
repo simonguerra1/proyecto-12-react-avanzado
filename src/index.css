@@ -1,0 +1,110 @@
+:root {
+  --bg: #edf2f6;
+  --bg-gradient: radial-gradient(
+      1200px 800px at 10% -10%,
+      #ffffffcc,
+      transparent
+    ),
+    radial-gradient(1200px 800px at 100% 10%, #e8f0ffb8, transparent),
+    linear-gradient(180deg, #eef2f7 0%, #e8edf3 100%);
+  --text: #0f172a;
+  --muted: #475569;
+  --border: rgba(255, 255, 255, 0.45);
+  --glass: rgba(255, 255, 255, 0.55);
+  --glass-hover: rgba(255, 255, 255, 0.65);
+  --shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+  --radius-xl: 16px;
+  --radius-2xl: 20px;
+  --radius-3xl: 28px;
+  --blur: 14px;
+  --brand: #4f8cff;
+  --brand-600: #386ef1;
+}
+
+* {
+  box-sizing: border-box;
+}
+html,
+body,
+#root {
+  height: 100%;
+}
+body {
+  margin: 0;
+  color: var(--text);
+  background: var(--bg-gradient), var(--bg);
+  -webkit-font-smoothing: antialiased;
+  font-family: ui-sans-serif, system-ui, -apple-system, 'SF Pro', Segoe UI,
+    Roboto, Inter, Arial, sans-serif;
+}
+
+.glass {
+  background: var(--glass);
+  backdrop-filter: blur(var(--blur)) saturate(160%);
+  -webkit-backdrop-filter: blur(var(--blur)) saturate(160%);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  border-radius: var(--radius-2xl);
+}
+
+.btn {
+  appearance: none;
+  border: 1px solid var(--border);
+  background: var(--glass);
+  backdrop-filter: blur(var(--blur));
+  padding: 10px 16px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+.btn:hover {
+  background: var(--glass-hover);
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+  transform: translateY(-1px);
+}
+.btn:active {
+  transform: translateY(0);
+}
+
+.btn-primary {
+  border-color: transparent;
+  background: linear-gradient(180deg, #ffffffb8, #ffffff80) padding-box,
+    linear-gradient(180deg, #6aa4ff, #4f8cff) border-box;
+  border: 1px solid transparent;
+  color: #0b1b45;
+}
+.link {
+  color: var(--brand);
+  text-decoration: none;
+}
+.link:hover {
+  color: var(--brand-600);
+}
+
+@media (prefers-reduced-transparency: reduce) {
+  .glass,
+  .btn {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    background: #fff;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+body {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell,
+    Noto Sans, Arial, sans-serif;
+  background: #fafafa;
+  color: #111;
+}
+a {
+  color: inherit;
+}
