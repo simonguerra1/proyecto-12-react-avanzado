@@ -19,7 +19,6 @@
   max-width: 680px;
 }
 .restart-btn {
-  /* usa .btn global si quieres */
   border: 1px solid var(--border);
   background: var(--glass);
   padding: 8px 14px;
