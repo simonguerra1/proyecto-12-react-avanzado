@@ -1,7 +1,7 @@
 import { Routes, Route } from 'react-router-dom'
 import Layout from './components/layout/Layout.jsx'
 import Home from './components/Routes/home/Home.jsx'
-import TicTacToe from './components/Routes/tictactoe/tictactoe.jsx'
+import TicTacToe from './components/Routes/tictactoe/TicTacToe.jsx'
 import Memory from './components/Routes/memory/Memory.jsx'
 
 export default function App() {
