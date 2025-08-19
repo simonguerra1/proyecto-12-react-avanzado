@@ -37,3 +37,40 @@
   transform: rotateY(180deg);
   background: linear-gradient(180deg, #ffffffb8, #ffffff6a);
 }
+
+@media (max-width: 600px) {
+  .memory-hud {
+    gap: 12px;
+    padding: 8px 12px;
+    max-width: 95%;
+    font-size: 0.9rem;
+  }
+
+  .restart-btn {
+    padding: 6px 10px;
+    font-size: 0.9rem;
+  }
+
+  .memory-grid {
+    grid-template-columns: repeat(4, 70px); /* proporcional al 90px original */
+    gap: 10px;
+  }
+
+  .memory-ranking {
+    max-width: 95%;
+    padding: 8px 12px;
+    font-size: 0.9rem;
+  }
+
+  /* 👇 Cards adaptadas */
+  .card {
+    width: 70px; /* proporcional al 90px original */
+    height: 70px;
+  }
+
+  .card-front,
+  .card-back {
+    border-radius: 14px; /* proporcional al 18px original */
+    font-size: 24px; /* proporcional al 32px original */
+  }
+}
