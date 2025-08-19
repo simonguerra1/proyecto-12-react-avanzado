@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import React from 'react'
 import './Layout.css'
-import GradientBg from '../gradientbg/gradientbg'
+import GradientBg from '../gradientbg/GradientBg'
 
 export default function Layout({ children }) {
   return (
